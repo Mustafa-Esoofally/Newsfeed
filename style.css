@@ -1,0 +1,30 @@
+ul li {
+    color:#444; /* set color of list item to a dark gray */
+      list-style:none; /* if you’re not already using a reset */
+  }
+  
+  ul li:before {
+    color:#ed0000; /* set color to red */
+    content:"\25AA"; /* /2022 is the numerical unicode for &bull; */
+    font-size:1.3em; /* set the font-size of the bullet if necessary. Make sure to use em or %*/
+    padding-right:.25em; /* give the bullet some padding from the text Make sure to use em*/
+    position:relative;
+      top:.1em; /* set the vertical position of the bullet if necessary. Make sure to use em or % */
+
+
+  }
+
+#title{
+    font-size:23px;
+  }
+
+  #datetime{
+    font-size:14px;
+     margin-left:8px;
+
+  }
+
+  #readmore{
+    font-size:18px ; 
+    margin-left:10px;
+  }
