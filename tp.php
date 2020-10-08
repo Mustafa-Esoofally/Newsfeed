@@ -3,7 +3,16 @@
 
 
 <?php
+$cookie_name ="word";
 
+
+if(!isset($_COOKIE[$cookie_name])) {
+    echo "Cookie named '" . $cookie_name . "' is not set!";
+  } else {
+      $x=$_COOKIE[$cookie_name];
+    // echo "Cookie '" . $cookie_name . "' is set!<br>";
+    // echo $x;
+}
 //XAMPP
 ini_set('error_reporting', E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED);
 
@@ -24,18 +33,16 @@ if($db === false){
 }
  
 // Attempt select query execution
-$sql = "SELECT * FROM newsfeed ORDER BY Id desc";
+$sql = "SELECT * FROM newsfeed WHERE Title regexp '(^|[[:space:]])$x([[:space:]]|$)' ORDER BY Id desc";
+
 if($result = mysqli_query($db, $sql)){
     if(mysqli_num_rows($result) > 0){
         echo '<table class = "table table striped" >';
             echo "<tr>";
-            // echo "<h2>";
-            
-            echo "<th>Id</th>";
-            echo "<th>Title</th>";
-            echo "<th>Date</th>";
-            echo "<th>Source</th>";
-            // echo "</h2>";
+                echo "<th>Id</th>";
+                echo "<th>Title</th>";
+                echo "<th>Date</th>";
+                echo "<th>Source</th>";
             echo "</tr>";
             
         while($row = mysqli_fetch_array($result)){
@@ -61,3 +68,4 @@ if($result = mysqli_query($db, $sql)){
 // Close connection
 mysqli_close($db);
 ?>
+
