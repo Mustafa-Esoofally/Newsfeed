@@ -1,7 +1,7 @@
 # Newsfeed
-Newsfeed is web-crawler which indexes many different websites and collects news articles . 
-It is a custom newsfeed for a specific topic/keyword(for now Startups) . 
-It also has a [Funding Alert] section for fundraising /investment news .
+Newsfeed is web-crawler which indexes thousands of  websites and collects news articles . 
+It is a custom newsfeed for stories revelant to startups . 
+It also has a [Funding Alert] section for fundraising /investment articles .
 The news articles are also summarized using a TagCloud .
 Click on any word and you'll see the related news instantly. 
 
