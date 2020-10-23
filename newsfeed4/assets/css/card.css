@@ -1,0 +1,64 @@
+ul li {
+    color:#444; /* set color of list item to a dark gray */
+      list-style:none; /* if you’re not already using a reset */
+  }
+  
+  ul li:before {
+    color:#ed0000; /* set color to red */
+    content:"\25AA"; /* /2022 is the numerical unicode for &bull; */
+    font-size:1.3em; /* set the font-size of the bullet if necessary. Make sure to use em or %*/
+    padding-right:.25em; /* give the bullet some padding from the text Make sure to use em*/
+    position:relative;
+      top:.1em; /* set the vertical position of the bullet if necessary. Make sure to use em or % */
+
+
+  }
+
+  .textnormal {font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: .775rem;
+    letter-spacing: .2px;
+    color: #202124;
+    text-shadow: none;    
+}
+
+  .textbold {font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: .875rem;
+    font-weight:bold;
+    letter-spacing: .2px;
+    color: #202124;
+    text-shadow: none;    
+}
+
+.textgray {font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  font-size: .675rem;
+  letter-spacing: .1px;
+  color: gray;
+  text-shadow: none;    
+  font-style: italic;
+  
+}
+
+.title{
+    /* font-size:18px; */
+    /* font-size:19px; */
+    margin-left: 20px;
+      }
+
+  #datetime{
+    font-size:12px;
+     margin-left:8px;
+     color:red;
+
+  }
+
+  #readmore{
+    font-size:18px ; 
+    margin-left:10px;
+  }
+
+.description{
+  /* font: size 19px ; */
+  padding-left: 5px;
+
+  
+}

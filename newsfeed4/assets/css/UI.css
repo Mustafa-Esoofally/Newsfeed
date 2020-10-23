@@ -1,0 +1,12 @@
+/* <style> */
+  :root {
+    font: 400 16px/1.5 Verdana;
+  }
+
+  button {
+    display: inline-block;
+    font: inherit;
+    padding: 0px 0px;
+    cursor: pointer;
+  }
+/* </style> */
